@@ -71,6 +71,7 @@ class MutatorVisitor(ASTVisitor):
         # translating for-loops into while-loops
         self.found_continue = False
         self.for_ids_2_swap = []
+        self.pn = None
         
     def visit(self, node):
         #node.show()
